@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav section */
+
+.nav-title,
+h1,
+.plant-social-icons {
+    color: #3E8847;
+}
+
+.nav-sub-title {
+    color: #7D807E;
+}
+
+.nav-items {
+    font-size: 20px;
+}
+
+.nav-search-bar {
+    width: 10rem;
+}
+
+.nav-search-bar:focus {
+    outline: none;
+}
+
+.nav-search-bar::placeholder {
+    color: #C0C0C0;
+    font-size: 14px;
+}
+
+/* Plant care Section */
+
+.plant-care-section {
+    height: 100vh;
+}
+
+.leaf-img {
+    position: absolute;
+    top: -4rem;
+    left: -3.2rem;
+}
+
+.horizontal-line {
+    width: 2rem;
+}
+
+.plant-care-buttons {
+    border: 1px solid black;
+}
+
+.plant-care-buttons:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.image-2 {
+    height: 250px;
+}
+
+/* Plant Collection Section */
+
+.plant-collection {
+    margin-top: 8rem !important;
+}
+
+.journey-detail-section {
+    padding-top: 10rem;
+}
+
+.journey-right-section {
+    width: 100%;
+}
+
+.our-journey-section {
+    position: relative;
+    /* height: 850px; */
+}
+
+.journey-plant-img {
+    position: absolute;
+    left: 1.5rem;
+    top: 50px;
+}
+
+/* Ourt Advantages section  */
+
+.advantages-cards {
+    background-color: #FCFBF8;
+}
+
+.advantage-card-details,
+.choosing-card-details,
+.plant-content {
+    color: #727272;
+}
+
+.advantage-icons {
+    margin-left: -2.5rem;
+}
+
+/* Ask us anything section */
+
+.green-background {
+    width: 100%;
+}
+
+.garden-backround {
+    width: 100%;
+}
+
+.ask-right-section {
+    background-color: #FAF9F7;
+}
+
+.ask-us-form {
+    width: 90%;
+}
+
+.input-fields {
+    background-color: #FAF9F7;
+    border-color: #ECECEC !important;
+}
+
+.input-fields::placeholder {
+    color: #9C9FA6;
+}
+
+/* Choosing Section */
+
+.choosing-cards {
+    box-shadow: 2px 2px 5px #0216051A;
+}
+
+.choosing-cards:hover {
+    background-color: #3E8847;
+
+}
+
+.choosing-cards:hover p {
+    color: white !important;
+}
+
+/* Client section */
+
+.client-review-card {
+    box-shadow: 2px 2px 5px #0216051A;
+}
+
+.client-review-card:hover {
+    background-color: #3E8847;
+    color: white;
+}
+
+.client-img {
+    margin-left: -3rem;
+}
+
+/* Plant section */
+
+.jungle-img {
+    width: 100%;
+}
+
+/* Footer section */
+
+footer {
+    background-color: #09270D;
+}
+
+.line {
+    width: 100%;
+    color: white;
+    margin: auto;
+}
+
+/* common section */
+
+.text-color,
+.social-icon {
+    color: #D0D6C9;
+}
+
+.text-size {
+    font-size: 14px !important;
+}
+
+.button-style:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.text-style:hover {
+    color: #92f80d !important;
+    text-decoration: 2px underline !important;
+}
+
+.plant-social-icons:hover {
+    transform: scale(1.5);
+}
+
+.social-icon:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (min-width:768px) {
+
+    .plant-care-section {
+        height: 80vh;
+    }
+
+    .plant-title {
+        font-size: 58px;
+    }
+
+    .plant-left-section {
+        width: 19rem;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .plant-right-section {
+        position: relative;
+    }
+
+    .image-1 {
+        width: 400px;
+        height: 450px;
+        z-index: -1;
+        left: 15rem;
+        top: 3rem;
+        position: absolute;
+    }
+
+    .image-2 {
+        width: 300px;
+        height: 540px;
+        z-index: -2;
+        position: absolute;
+        left: 28rem;
+    }
+
+    .plant-collection {
+        margin-top: 0rem !important;
+    }
+
+    .green-background {
+        width: 45%;
+    }
+
+    .garden-backround {
+        width: 60%;
+        height: 550px;
+        z-index: -1;
+        position: relative;
+    }
+
+    .ask-right-section {
+        background-color: #FAF9F7;
+        position: absolute;
+        left: 25rem;
+        height: 450px;
+        width: 47%;
+        z-index: 1;
+    }
+
+    .ask-us-form {
+        width: 90%;
+    }
+
+    .journey-plant-img {
+        position: absolute;
+        left: 11rem;
+        top: 98px;
+    }
+
+    .journey-right-section {
+        width: 20rem;
+    }
+
+    .our-journey-section {
+        position: relative;
+        height: 600px;
+    }
+
+    .journey-plant-img {
+        position: absolute;
+        left: 2.8rem;
+        top: 50px;
+    }
+
+    .jungle-img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .plant-care-section {
+        height: 90vh;
+    }
+
+    .plant-left-section {
+        width: 22rem;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .plant-right-section {
+        position: relative;
+    }
+
+    .image-1 {
+        width: 550px;
+        height: 450px;
+        z-index: -1;
+        left: 20rem;
+        top: 4rem;
+        position: absolute;
+    }
+
+    .image-2 {
+        width: 350px;
+        height: 580px;
+        z-index: -2;
+        position: absolute;
+        left: 41rem;
+    }
+
+    .green-background {
+        width: 40%;
+    }
+
+    .plant-collection {
+        margin-top: 0rem !important;
+    }
+
+    .garden-backround {
+        width: 60%;
+        height: 550px;
+        z-index: -1;
+        position: relative;
+    }
+
+    .ask-right-section {
+        background-color: #FAF9F7;
+        position: absolute;
+        left: 33.8rem;
+        height: 450px;
+        width: 47%;
+        z-index: 1;
+    }
+
+    .ask-us-form {
+        width: 90%;
+    }
+
+
+    .journey-plant-img {
+        position: absolute;
+        left: 5rem;
+        top: 50px;
+    }
+
+    .journey-right-section {
+        width: 29rem;
+    }
+
+    .jungle-img {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    .plant-care-section {
+        height: 80vh;
+    }
+
+    .plant-left-section {
+        width: 24rem;
+        z-index: 1;
+        position: absolute;
+        top: 13rem;
+    }
+
+    .plant-right-section {
+        position: relative;
+    }
+
+    .image-1 {
+        width: 800px;
+        height: 450px;
+        z-index: -1;
+        left: 24rem;
+        top: 4rem;
+        position: absolute;
+    }
+
+    .image-2 {
+        width: 380px;
+        height: 580px;
+        z-index: -2;
+        position: absolute;
+        left: 70.5rem;
+    }
+
+    .green-background {
+        width: 30%;
+    }
+
+    .plant-collection {
+        margin-top: 0rem !important;
+    }
+
+    .journey-plant-img {
+        position: absolute;
+        left: 11rem;
+        top: 98px;
+    }
+
+    .journey-right-section {
+        width: 29rem;
+    }
+
+    .ask-right-section {
+        background-color: #FAF9F7;
+        position: absolute;
+        left: 50rem;
+        height: 450px;
+        width: 47%;
+        z-index: 1;
+    }
+
+    .ask-us-form {
+        width: 90%;
+    }
+
+    .jungle-img {
+        width: 60%;
+    }
+
+}
