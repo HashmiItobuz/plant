@@ -6,12 +6,6 @@ body {
 
 /* Nav section */
 
-.nav-title,
-h1,
-.plant-social-icons {
-    color: #3E8847;
-}
-
 .nav-sub-title {
     color: #7D807E;
 }
@@ -33,40 +27,21 @@ h1,
     font-size: 14px;
 }
 
-/* Plant care Section */
+/* Hero Section */
 
-.plant-care-section {
-    height: 100vh;
-}
-
-.leaf-img {
-    position: absolute;
-    top: -4rem;
-    left: -3.2rem;
+.hero-leafs-image {
+    height: 40vh;
 }
 
 .horizontal-line {
     width: 2rem;
 }
 
-.plant-care-buttons {
+.hero-buttons {
     border: 1px solid black;
 }
 
-.plant-care-buttons:hover {
-    background-color: black !important;
-    color: white;
-}
-
-.image-2 {
-    height: 250px;
-}
-
 /* Plant Collection Section */
-
-.plant-collection {
-    margin-top: 8rem !important;
-}
 
 .journey-detail-section {
     padding-top: 10rem;
@@ -78,7 +53,6 @@ h1,
 
 .our-journey-section {
     position: relative;
-    /* height: 850px; */
 }
 
 .journey-plant-img {
@@ -91,12 +65,6 @@ h1,
 
 .advantages-cards {
     background-color: #FCFBF8;
-}
-
-.advantage-card-details,
-.choosing-card-details,
-.plant-content {
-    color: #727272;
 }
 
 .advantage-icons {
@@ -138,7 +106,6 @@ h1,
 
 .choosing-cards:hover {
     background-color: #3E8847;
-
 }
 
 .choosing-cards:hover p {
@@ -156,6 +123,10 @@ h1,
     color: white;
 }
 
+.client-review-card:hover p {
+    color: white;
+}
+
 .client-img {
     margin-left: -3rem;
 }
@@ -163,6 +134,10 @@ h1,
 /* Plant section */
 
 .jungle-img {
+    width: 100%;
+}
+
+.plant-description {
     width: 100%;
 }
 
@@ -180,7 +155,26 @@ footer {
 
 /* common section */
 
-.text-color,
+.plant-social-icons:hover {
+    transform: scale(1.5);
+}
+
+.heading-color {
+    color: #3E8847 !important;
+}
+
+h1,
+h2,
+.heading-style {
+    font-family: Playfair;
+    color: #09270D;
+}
+
+.text-description-color {
+    color: #727272;
+}
+
+.footer-list-color,
 .social-icon {
     color: #D0D6C9;
 }
@@ -190,7 +184,7 @@ footer {
 }
 
 .button-style:hover {
-    background-color: black !important;
+    background-color: #09270D !important;
     color: white;
 }
 
@@ -199,7 +193,7 @@ footer {
     text-decoration: 2px underline !important;
 }
 
-.plant-social-icons:hover {
+.hero-social-icons:hover {
     transform: scale(1.5);
 }
 
@@ -209,39 +203,37 @@ footer {
 
 @media screen and (min-width:768px) {
 
-    .plant-care-section {
-        height: 80vh;
+    .hero-title {
+        font-size: 2rem;
     }
 
-    .plant-title {
-        font-size: 58px;
+    .hero-left {
+        width: 38%;
+        position: relative;
+        top: 20%;
+        z-index: 2;
+        left: 4%;
     }
 
-    .plant-left-section {
-        width: 19rem;
-        z-index: 1;
-        position: absolute;
-    }
-
-    .plant-right-section {
+    .hero-right {
+        width: 80%;
         position: relative;
     }
 
-    .image-1 {
-        width: 400px;
-        height: 450px;
-        z-index: -1;
-        left: 15rem;
-        top: 3rem;
+    .hero-plant-image {
+        width: 70%;
+        height: 70%;
+        z-index: 1;
         position: absolute;
+        top: 15%;
     }
 
-    .image-2 {
-        width: 300px;
-        height: 540px;
-        z-index: -2;
+    .hero-leafs-image {
+        width: 40%;
+        height: 100%;
+        z-index: -1;
         position: absolute;
-        left: 28rem;
+        left: 60%;
     }
 
     .plant-collection {
@@ -296,39 +288,40 @@ footer {
     .jungle-img {
         width: 100%;
     }
-
 }
 
 @media screen and (min-width:1024px) {
-    .plant-care-section {
-        height: 90vh;
+
+    .hero-title {
+        font-size: 3rem;
     }
 
-    .plant-left-section {
-        width: 22rem;
-        z-index: 1;
-        position: absolute;
+    .hero-left {
+        width: 30%;
+        position: relative;
+        top: 5%;
+        z-index: 2;
+        left: 4%;
     }
 
-    .plant-right-section {
+    .hero-right {
+        width: 60%;
         position: relative;
     }
 
-    .image-1 {
-        width: 550px;
-        height: 450px;
-        z-index: -1;
-        left: 20rem;
-        top: 4rem;
+    .hero-plant-image {
+        width: 90%;
+        height: 80%;
+        z-index: 1;
         position: absolute;
+        top: 8%;
     }
 
-    .image-2 {
-        width: 350px;
-        height: 580px;
-        z-index: -2;
-        position: absolute;
-        left: 41rem;
+    .hero-leafs-image {
+        width: 29%;
+        height: 74vh;
+        z-index: -1;
+        left: 85%;
     }
 
     .green-background {
@@ -359,7 +352,6 @@ footer {
         width: 90%;
     }
 
-
     .journey-plant-img {
         position: absolute;
         left: 5rem;
@@ -370,43 +362,52 @@ footer {
         width: 29rem;
     }
 
+    .plant-description {
+        width: 50%;
+    }
+
     .jungle-img {
         width: 60%;
     }
-
 }
 
 @media screen and (min-width:1440px) {
-    .plant-care-section {
-        height: 80vh;
+
+    .hero-title {
+        font-size: 4rem;
     }
 
-    .plant-left-section {
-        width: 24rem;
-        z-index: 1;
-        position: absolute;
-        top: 13rem;
+    .hero-sub-title {
+        font-size: 1.5rem;
     }
 
-    .plant-right-section {
+    .hero-left {
+        width: 25%;
+        position: relative;
+        top: 30%;
+        z-index: 2;
+        left: 5%;
+    }
+
+    .hero-right {
+        width: 80%;
         position: relative;
     }
 
-    .image-1 {
-        width: 800px;
-        height: 450px;
-        z-index: -1;
-        left: 24rem;
-        top: 4rem;
+    .hero-plant-image {
+        width: 70%;
+        height: 80%;
+        z-index: 1;
         position: absolute;
+        top: 10%;
     }
 
-    .image-2 {
-        width: 380px;
-        height: 580px;
-        z-index: -2;
+    .hero-leafs-image {
+        width: 40%;
+        height: 100%;
+        z-index: -1;
         position: absolute;
-        left: 70.5rem;
+        left: 60%;
     }
 
     .green-background {
@@ -415,6 +416,10 @@ footer {
 
     .plant-collection {
         margin-top: 0rem !important;
+    }
+
+    .plant-content {
+        font-size: 1.5rem;
     }
 
     .journey-plant-img {
@@ -430,7 +435,7 @@ footer {
     .ask-right-section {
         background-color: #FAF9F7;
         position: absolute;
-        left: 50rem;
+        left: 53%;
         height: 450px;
         width: 47%;
         z-index: 1;
@@ -444,4 +449,14 @@ footer {
         width: 60%;
     }
 
+    .plant-description {
+        width: 40%;
+    }
+
+    .garden-backround {
+        width: 60%;
+        height: 550px;
+        z-index: -1;
+        position: relative;
+    }
 }
