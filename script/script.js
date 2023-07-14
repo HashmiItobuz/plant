@@ -11,18 +11,6 @@ const clientSliderCards = document.querySelectorAll(".client-slider");
 
 let flag = 0;
 
-heroBackButton.addEventListener('click', () => {
-    const num = 1;
-    flag = flag + num;
-    heroSlider(flag);
-});
-
-heroForwardButton.addEventListener('click', () => {
-    const num = 1;
-    flag = flag - num;
-    heroSlider(flag);
-})
-
 function heroSlider(index) {
     for (let item of heroSliderContainer) {
         item.classList.add("hidden");
@@ -41,16 +29,16 @@ function heroSlider(index) {
 
 heroSlider(flag);
 
-collectionBackButton.addEventListener("click", () => {
+heroBackButton.addEventListener('click', () => {
     const num = 1;
-    flag = flag - num;
-    sliderDisplay(flag);
+    flag = flag + num;
+    heroSlider(flag);
 });
 
-collectionForwardButton.addEventListener("click", () => {
-    let num = 1;
-    flag = flag + num;
-    sliderDisplay(flag);
+heroForwardButton.addEventListener('click', () => {
+    const num = 1;
+    flag = flag - num;
+    heroSlider(flag);
 });
 
 function sliderDisplay(index) {
@@ -71,16 +59,16 @@ function sliderDisplay(index) {
 
 sliderDisplay(flag);
 
-clientBackButton.addEventListener('click', () => {
+collectionBackButton.addEventListener("click", () => {
     const num = 1;
     flag = flag - num;
-    clientDisplay(flag);
+    sliderDisplay(flag);
 });
 
-clientForwardButton.addEventListener('click', () => {
+collectionForwardButton.addEventListener("click", () => {
     let num = 1;
     flag = flag + num;
-    clientDisplay(flag);
+    sliderDisplay(flag);
 });
 
 function clientDisplay(index) {
@@ -100,4 +88,18 @@ function clientDisplay(index) {
 }
 
 clientDisplay(flag);
+
+clientBackButton.addEventListener('click', () => {
+    const num = 1;
+    flag = flag - num;
+    clientDisplay(flag);
+});
+
+clientForwardButton.addEventListener('click', () => {
+    let num = 1;
+    flag = flag + num;
+    clientDisplay(flag);
+});
+
+
 

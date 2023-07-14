@@ -48,8 +48,8 @@
                         <i class="fa-solid fa-magnifying-glass fs-5 me-3 my-2"></i>
                     </div>
                     <div class="d-flex gap-5 gap-md-3 justify-content-center">
-                        <i class="fa-solid fa-user-plus mt-2 text-black social-icon fs-5"></i>
-                        <i class="fa-solid fa-bag-shopping mt-2 text-black social-icon fs-5"></i>
+                        <a href="#" target="_blank" class="text-decoration-none"><i class="fa-solid fa-user-plus mt-2 text-black social-icon fs-5"></i></a>
+                        <a href="#" target="_blank" class="text-decoration-none"><i class="fa-solid fa-bag-shopping mt-2 text-black social-icon fs-5"></i></a>
                     </div>
                 </div>
             </div>
@@ -72,9 +72,9 @@
                     plant</button>
             </div>
             <div class="d-flex justify-content-center justify-content-md-start align-item-center gap-4 pt-3 pt-md-5">
-                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-facebook-f fs-4"></i></a>
-                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-instagram fs-4"></i></a>
-                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-pinterest-p fs-4"></i></a>
+                <a href="#" class="heading-color hero-social-icons" target="_blank"><i class="fa-brands fa-facebook-f fs-4"></i></a>
+                <a href="#" class="heading-color hero-social-icons" target="_blank"><i class="fa-brands fa-instagram fs-4"></i></a>
+                <a href="#" class="heading-color hero-social-icons" target="_blank"><i class="fa-brands fa-pinterest-p fs-4"></i></a>
             </div>
         </div>
         <div class="hero-right d-flex flex-column flex-md-row gap-3">
@@ -83,7 +83,8 @@
                     <img src="images/hero-section/plant.png" alt="plant image" class="h-100 w-100 img-fluid">
                 </div>
                 <div class="hero-leafs-image ">
-                    <img src="images/hero-section/leafs.png" alt="leafs image" class="h-100 w-100 img-fluid overflow-y-hidden">
+                    <img src="images/hero-section/leafs.png" alt="leafs image"
+                        class="h-100 w-100 img-fluid overflow-y-hidden">
                 </div>
             </div>
             <div class="hero-slider-img">
@@ -91,19 +92,20 @@
                     <img src="images/hero-section/plant.png" alt="plant image" class="h-100 w-100 img-fluid">
                 </div>
                 <div class="hero-plant-image">
-                    <img src="images/hero-section/leafs.png" alt="leafs image" class="h-100 w-100 img-fluid overflow-y-hidden">
+                    <img src="images/hero-section/leafs.png" alt="leafs image"
+                        class="h-100 w-100 img-fluid overflow-y-hidden">
                 </div>
             </div>
             <div class="w-50 d-flex justify-content-center justify-content-md-end align-items-md-end mx-auto mx-md-0">
-                <div><button class="border-0 rounded-5 p-2 bg-white shadow me-5"><img
-                            src="images/hero-section/Arrow - Left 2.png" alt="back button" height="25px" width="25px"
+                <div><button class="border-0 rounded-5 p-2 bg-white shadow me-5 slider-button"><img
+                            src="images/hero-section/arrow.png" alt="back button" height="25px" width="25px"
                             class="hero-back-button"></button></div>
                 <div class="d-flex">
                     <hr class="horizontal-line fw-bold fs-1 hero-slider-line">
                     <hr class="horizontal-line fw-bold fs-1 hero-slider-line">
-                </div>            
-                <div><button class="border-0 rounded-5 p-2 bg-white shadow ms-5"><img
-                            src="images/hero-section/Arrow - Left 2.png" alt="back button" height="25px" width="25px"
+                </div>
+                <div><button class="border-0 rounded-5 p-2 bg-white shadow ms-5 slider-button"><img
+                            src="images/hero-section/arrow.png" alt="back button" height="25px" width="25px"
                             class="hero-forward-button"></button> </div>
             </div>
         </div>
@@ -113,7 +115,7 @@
 
     <section class="container plant-collection mt-md-5 pt-lg-5">
         <h2 class="text-center">Plant collection</h2>
-        <div class="d-flex flex-column flex-md-row gap-5 collection-slider-container">
+        <div class="d-flex flex-column flex-md-row  gap-1 gap-md-5 collection-slider-container">
             <div
                 class="collection-slider d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-5 ms-lg-5 ps-lg-5">
                 <div>
@@ -161,10 +163,10 @@
             </div>
 
             <div class="d-flex flex-row flex-md-column justify-content-center align-content-center gap-3">
-                <button class="rounded-5 border bg-white collection-back-slider-button p-2"
-                    id="collection-back-button"><img src="./images/plant-collection/angle-left-solid.svg"
-                        alt="back button" height="40px" width="40px"></button>
-                <button class="rounded-5 border bg-white collection-forward-slider-button p-2"
+                <button class="rounded-5 border bg-white collection-back-button p-2 slider-button" id="collection-back-button"><img
+                        src="./images/plant-collection/angle-left-solid.svg" alt="back button" height="40px"
+                        width="40px"></button>
+                <button class="rounded-5 border bg-white collection-forward-button p-2 slider-button"
                     id="collection-forward-button"><img src="./images/plant-collection/angle-right-solid.svg"
                         alt="forward button" height="40px" width="40px"></button>
             </div>
@@ -174,24 +176,28 @@
     <!-- our journey section -->
 
     <section class="container our-journey-section mt-md-5 pt-xl-5">
-    <div>
-        <img src="images/our-journey-section/plant.png" alt="plant image" height="500px" class="journey-plant-img">
-        <div class="d-flex flex-column flex-md-row justify-content-around align-items-center journey-detail-section">
-            <img src="images/our-journey-section/green-background.png" alt="green background" width="369px"
-                height="390px" class="green-background">
-            <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start journey-right-section">
-                <h2 class="mb-4 text-center text-md-start mt-4">Our journey</h2>
-                <p class="heading-style text-description-color fs-5">It is a long established fact that a reader will be
-                    distracted by the readable content of a page when
-                    It is a long .It is a long established fact that a reader will be distracted by the readable content
-                    of a is simply.
-                </p>
-                <button
-                    class="border-1 border-black  px-5 py-2 rounded-5 fw-semibold mt-3 mt-md-5 bg-white button-style">Get
-                    start</button>
+        <div>
+            <img src="images/our-journey-section/plant.png" alt="plant image" height="500px" class="journey-plant-img">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-around align-items-center journey-detail-section">
+                <img src="images/our-journey-section/green-background.png" alt="green background" width="369px"
+                    height="390px" class="green-background">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center align-items-md-start journey-right-section">
+                    <h2 class="mb-4 text-center text-md-start mt-4">Our journey</h2>
+                    <p class="heading-style text-description-color fs-5">It is a long established fact that a reader
+                        will be
+                        distracted by the readable content of a page when
+                        It is a long .It is a long established fact that a reader will be distracted by the readable
+                        content
+                        of a is simply.
+                    </p>
+                    <button
+                        class="border-1 border-black  px-5 py-2 rounded-5 fw-semibold mt-3 mt-md-5 bg-white button-style">Get
+                        start</button>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- our advantage section -->
@@ -300,7 +306,7 @@
         <h2 class="fw-light ms-lg-5 text-center text-lg-start">What clients talk about us</h2>
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 gap-4">
             <div class="me-5">
-                <button class="border rounded-5 p-3 bg-white" id="client-back-button">
+                <button class="border rounded-5 p-3 bg-white slider-button" id="client-back-button">
                     <img src="./images/client-section/play-solid.svg" alt="play button" height="25px" width="25px">
                 </button>
             </div>
@@ -329,7 +335,7 @@
                         <span class="float-end me-5"><i class="fa-solid fa-quote-right pe-3"></i></span>
             </div>
             <div>
-                <button class="border rounded-5 p-3 bg-white" id="client-forward-button">
+                <button class="border rounded-5 p-3 bg-white slider-button" id="client-forward-button">
                     <img src="./images/client-section/play-solid.svg" alt="play button" height="25px" width="25px">
                 </button>
             </div>
@@ -340,9 +346,9 @@
 
     <section
         class="container-fluid plant-section my-5 pt-md-5 d-flex flex-column flex-lg-row justify-content-between gap-3">
-        <div class="p-2 ms-lg-5 plant-description">
+        <div class="d-flex flex-column justify-content-center justify-content-md-start align-items-center align-items-md-start p-2 ms-lg-5 plant-description">
             <h2 class="text-center text-lg-start">Plant care</h2>
-            <p class="mt-5 text-description-color plant-content">It is a long established fact that a reader will be
+            <p class="mt-2 mt-md-5 text-description-color plant-content">It is a long established fact that a reader will be
                 distracted by the
                 readable content of a page when It
                 is a long.It is a long established fact that a reader will be distracted by the readable content
@@ -356,7 +362,8 @@
                 the blog</button>
         </div>
         <div class="jungle-img">
-            <img src="images/plant-section/jungle.png" alt="jungle section" class="img-fluid h-100 w-100"></div>
+            <img src="images/plant-section/jungle.png" alt="jungle section" class="img-fluid h-100 w-100">
+        </div>
     </section>
 
     <!-- footer Section -->
@@ -371,10 +378,10 @@
                     content of a page when It is<br> a long .It is a long established fact that a reader will be<br>
                     distracted by the.</p>
                 <div class="d-flex gap-2">
-                    <a href="#"><i class="fa-brands fa-square-instagram social-icon fs-4"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-facebook social-icon fs-4"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-youtube social-icon fs-4"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-twitter social-icon fs-4"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram social-icon fs-4"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-facebook social-icon fs-4"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-youtube social-icon fs-4"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-twitter social-icon fs-4"></i></a>
                 </div>
             </div>
             <div class="d-flex flex-column align-items-center align-items-md-start mt-3">

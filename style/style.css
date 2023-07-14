@@ -73,18 +73,18 @@ body {
     top: 50px;
 }
 
-.collection-back-slider-button,
+.collection-back-button,
 .back-icon {
     border-color: #09270D !important;
 }
 
-.collection-forward-slider-button,
+.collection-forward-button,
 .forward-icon {
     border-color: #F5C771 !important;
 }
 
 .collection-slider-container {
-    transition: all .7s ease-in-out !important;
+    transition: all .7s ease-in-out;
 }
 
 /* Ourt Advantages section  */
@@ -228,6 +228,11 @@ h2,
     display: none !important;
 }
 
+.slider-button:hover {
+    transform: scale(1.1);
+}
+
+
 @media screen and (min-width:768px) {
 
     .hero-title {
@@ -330,7 +335,7 @@ h2,
     }
 
     .hero-right {
-        width: 70%;
+        width: 75%;
         position: relative;
     }
 
