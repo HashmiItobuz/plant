@@ -61,6 +61,18 @@ body {
     top: 50px;
 }
 
+.collection-back-slider-button,.back-icon {
+    border-color: #09270D !important;
+}
+
+.collection-forward-slider-button, .forward-icon {
+    border-color: #F5C771 !important;
+}
+
+.collection-slider-container {
+    transition: all .7s ease-in-out !important;
+}
+
 /* Ourt Advantages section  */
 
 .advantages-cards {
@@ -139,6 +151,7 @@ body {
 
 .plant-description {
     width: 100%;
+    font-family: Playfair;
 }
 
 /* Footer section */
@@ -199,6 +212,10 @@ h2,
 
 .social-icon:hover {
     transform: scale(1.5);
+}
+
+.hidden {
+    display: none !important;
 }
 
 @media screen and (min-width:768px) {
@@ -450,7 +467,7 @@ h2,
     }
 
     .plant-description {
-        width: 40%;
+        width: 37%;
     }
 
     .garden-backround {

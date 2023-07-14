@@ -88,18 +88,60 @@
 
     <section class="container plant-collection mt-md-5">
         <h2 class="text-center">Plant collection</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-5">
-            <div>
-                <img src="images/plant-collection/plant-1.png" alt="plant-image" class="img-fluid" width="350px">
-                <p class="mt-4 fs-5 fw-light heading-style">Bird of paradise</p>
+        <div class="d-flex flex-column flex-md-row gap-5 collection-slider-container">
+            <div
+                class="collection-slider d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-5 ms-lg-5 ps-lg-5">
+                <div>
+                    <img src="images/plant-collection/plant-1.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">Bird of paradise</p>
+                </div>
+                <div>
+                    <img src="images/plant-collection/plant-2.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">Rubber plants</p>
+                </div>
+                <div>
+                    <img src="images/plant-collection/plant-3.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">String of pearls</p>
+                </div>
             </div>
-            <div>
-                <img src="images/plant-collection/plant-2.png" alt="plant-image" class="img-fluid" width="350px">
-                <p class="mt-4 fs-5 fw-light heading-style">Rubber plants</p>
+            <div
+                class="collection-slider d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-5 ms-lg-5 ps-lg-5">
+                <div>
+                    <img src="images/plant-collection/plant-2.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">Rubber plants</p>
+                </div>
+                <div>
+                    <img src="images/plant-collection/plant-3.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">String of pearls</p>
+                </div>
+                <div>
+                    <img src="images/plant-collection/plant-1.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">Bird of paradise</p>
+                </div>
             </div>
-            <div>
-                <img src="images/plant-collection/plant-3.png" alt="plant-image" class="img-fluid" width="350px">
-                <p class="mt-4 fs-5 fw-light heading-style">String of pearls</p>
+            <div
+                class="collection-slider d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-5 ms-lg-5 ps-lg-5">
+                <div>
+                    <img src="images/plant-collection/plant-3.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">String of pearls</p>
+                </div>
+                <div>
+                    <img src="images/plant-collection/plant-1.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">Bird of paradise</p>
+                </div>
+                <div>
+                    <img src="images/plant-collection/plant-2.png" alt="plant-image" class="img-fluid" width="350px">
+                    <p class="mt-4 fs-5 fw-light heading-style">Rubber plants</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row flex-md-column justify-content-center align-content-center gap-3">
+                <button class="rounded-5 border bg-white collection-back-slider-button p-2"
+                    id="collection-back-button"><img src="./images/plant-collection/angle-left-solid.svg"
+                        alt="back button" height="40px" width="40px"></button>
+                <button class="rounded-5 border bg-white collection-forward-slider-button p-2"
+                    id="collection-forward-button"><img src="./images/plant-collection/angle-right-solid.svg"
+                        alt="forward button" height="40px" width="40px"></button>
             </div>
         </div>
     </section>
@@ -229,32 +271,37 @@
 
     <section class="container-fluid client-section my-5 pt-md-5">
         <h2 class="fw-light ms-lg-5 text-center text-lg-start">What clients talk about us</h2>
-        <div class="d-flex flex-column flex-xl-row justify-content-around mt-5 gap-4">
-            <div
-                class="d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
-                <img src="images/client-section/women-1.png" alt="women image" height="100px" width="100px"
-                    class="client-img">
-                <span><i class="fa-solid fa-quote-left"></i><span>
-                        <p class="ms-4 pe-lg-5 text-description-color">It is a long established fact that a reader will
-                            be distracted by<br> the
-                            readable content of a page when
-                            It is a long .It is a long .It<br> is a long established fact that a reader will be . It is
-                            a long<br>
-                            established fact that a reader .</p><span class="float-end me-5"><i
-                                class="fa-solid fa-quote-right"></i></span>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 gap-4">
+            <div class="me-5">
+                <button class="border rounded-5 p-3 bg-white" id="client-back-button">
+                    <img src="./images/client-section/play-solid.svg" alt="play button" height="30px" width="30px">
+                </button>
             </div>
-            <div
-                class="d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
+            <div class="client-slider d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
+                <img src="images/client-section/women-1.png" alt="women image" height="100px" width="100px"
+                        class="client-img">
+                <span><i class="fa-solid fa-quote-left"></i><span>
+                <p class="ms-4 pe-lg-5 text-description-color">
+                    It is a long established fact that a readerwill be distracted by<br> the
+                    readable content of a page when It is a long .It is a long .It<br> is a long established fact that a reader will be . It
+                    is a long<br> established fact that a reader .
+                </p>
+                <span class="float-end me-5"><i class="fa-solid fa-quote-right"></i></span>
+            </div>
+            <div class="client-slider d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
                 <img src="images/client-section/jhonedoe.png" alt="women image" height="100px" width="100px"
                     class="client-img">
                 <span><i class="fa-solid fa-quote-left"></i><span>
-                        <p class="ms-4 pe-lg-5 text-description-color">It is a long established fact that a reader will
-                            be distracted by<br> the
-                            readable content of a page when
+                 <p class="ms-4 pe-lg-5 text-description-color">It is a long established fact that a reader will
+                            be distracted by<br> the readable content of a page when
                             It is a long .It is a long .It<br> is a long established fact that a reader will be . It is
-                            a long<br>
-                            established fact that a reader .</p><span class="float-end me-5"><i
-                                class="fa-solid fa-quote-right pe-3"></i></span>
+                            a long<br> established fact that a reader .</p>
+                <span class="float-end me-5"><i class="fa-solid fa-quote-right pe-3"></i></span>
+            </div>
+            <div>
+                <button class="border rounded-5 p-3 bg-white" id="client-forward-button">
+                    <img src="./images/client-section/play-solid.svg" alt="play button" height="30px" width="30px">
+                </button>
             </div>
         </div>
     </section>
@@ -265,8 +312,8 @@
         class="container-fluid plant-section my-5 pt-md-5 d-flex flex-column flex-lg-row justify-content-between gap-3">
         <div class="p-2 ms-lg-5 plant-description">
             <h2>Plant care</h2>
-            <p class="mt-3 text-description-color plant-content">It is a long established fact that a reader will be
-                distracted by the<br>
+            <p class="mt-5 text-description-color plant-content">It is a long established fact that a reader will be
+                distracted by the
                 readable content of a page when It
                 is a long.It is a long established fact that a reader will be distracted by the readable content
                 of a
