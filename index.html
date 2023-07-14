@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg mt-2 mx-xl-5">
+    <nav class="navbar navbar-expand-lg mt-2 mx-xl-5 px-2">
         <div class="container-fluid">
             <a class="navbar-brand fw-light nav-title heading-color heading-style fw-light fs-2" href="#"><span
                     class="nav-sub-title pe-1">My</span>Plants</a>
@@ -58,7 +58,7 @@
 
     <!-- Hero section -->
 
-    <section class="container-fluid d-flex flex-column flex-md-row hero-section my-5 px-0">
+    <section class="container-fluid d-flex flex-column flex-md-row hero-section my-5 px-0 gap-4">
         <div class="hero-left ms-lg-3 my-md-5">
             <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-2">
                 <hr class="horizontal-line fw-bold">
@@ -71,22 +71,47 @@
                 <button class="rounded-5 px-3 px-xl-5 py-2 bg-white fw-semibold hero-buttons button-style fs-xl-4">Buy a
                     plant</button>
             </div>
-            <div
-                class="d-flex justify-content-center justify-content-md-start align-item-center fs-5 gap-4 py-3 py-md-5">
-                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-pinterest-p"></i></a>
+            <div class="d-flex justify-content-center justify-content-md-start align-item-center gap-4 pt-3 pt-md-5">
+                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-facebook-f fs-4"></i></a>
+                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-instagram fs-4"></i></a>
+                <a href="#" class="heading-color hero-social-icons"><i class="fa-brands fa-pinterest-p fs-4"></i></a>
             </div>
         </div>
         <div class="hero-right d-flex flex-column flex-md-row gap-3">
-            <img src="images/hero-section/plant.png" alt="plant image" class="hero-plant-image img-fluid">
-            <img src="images/hero-section/leafs.png" alt="leafs image" class="hero-leafs-image img-fluid">
+            <div class="hero-slider-img">
+                <div class="hero-plant-image">
+                    <img src="images/hero-section/plant.png" alt="plant image" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="hero-leafs-image ">
+                    <img src="images/hero-section/leafs.png" alt="leafs image" class="h-100 w-100 img-fluid overflow-y-hidden">
+                </div>
+            </div>
+            <div class="hero-slider-img">
+                <div class="hero-leafs-image">
+                    <img src="images/hero-section/plant.png" alt="plant image" class="h-100 w-100 img-fluid">
+                </div>
+                <div class="hero-plant-image">
+                    <img src="images/hero-section/leafs.png" alt="leafs image" class="h-100 w-100 img-fluid overflow-y-hidden">
+                </div>
+            </div>
+            <div class="w-50 d-flex justify-content-center justify-content-md-end align-items-md-end mx-auto mx-md-0">
+                <div><button class="border-0 rounded-5 p-2 bg-white shadow me-5"><img
+                            src="images/hero-section/Arrow - Left 2.png" alt="back button" height="25px" width="25px"
+                            class="hero-back-button"></button></div>
+                <div class="d-flex">
+                    <hr class="horizontal-line fw-bold fs-1 hero-slider-line">
+                    <hr class="horizontal-line fw-bold fs-1 hero-slider-line">
+                </div>            
+                <div><button class="border-0 rounded-5 p-2 bg-white shadow ms-5"><img
+                            src="images/hero-section/Arrow - Left 2.png" alt="back button" height="25px" width="25px"
+                            class="hero-forward-button"></button> </div>
+            </div>
         </div>
     </section>
 
     <!-- plant collection section -->
 
-    <section class="container plant-collection mt-md-5">
+    <section class="container plant-collection mt-md-5 pt-lg-5">
         <h2 class="text-center">Plant collection</h2>
         <div class="d-flex flex-column flex-md-row gap-5 collection-slider-container">
             <div
@@ -149,11 +174,12 @@
     <!-- our journey section -->
 
     <section class="container our-journey-section mt-md-5 pt-xl-5">
+    <div>
         <img src="images/our-journey-section/plant.png" alt="plant image" height="500px" class="journey-plant-img">
         <div class="d-flex flex-column flex-md-row justify-content-around align-items-center journey-detail-section">
             <img src="images/our-journey-section/green-background.png" alt="green background" width="369px"
                 height="390px" class="green-background">
-            <div class="journey-right-section">
+            <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start journey-right-section">
                 <h2 class="mb-4 text-center text-md-start mt-4">Our journey</h2>
                 <p class="heading-style text-description-color fs-5">It is a long established fact that a reader will be
                     distracted by the readable content of a page when
@@ -161,10 +187,11 @@
                     of a is simply.
                 </p>
                 <button
-                    class="border-1 border-black  px-4 py-2 rounded-5 fw-semibold mt-3 mt-md-5 bg-white button-style w-50">Get
+                    class="border-1 border-black  px-5 py-2 rounded-5 fw-semibold mt-3 mt-md-5 bg-white button-style">Get
                     start</button>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- our advantage section -->
@@ -212,7 +239,7 @@
             <img src="images/ask-us-section/garden.png" alt="plants image" class="img-fluid w-100 h-100">
         </div>
         <div
-            class="ask-right-section d-flex flex-column justify-content-center align-items-center align-items-md-start my-md-5 ps-md-5 py-4 px-2 rounded-4">
+            class="ask-right-section d-flex flex-column justify-content-center align-items-center align-items-md-start my-md-5 ps-md-5 py-4 px-2 rounded-4 shadow">
             <h2 class="fw-light">Ask us anything</h2>
             <form class="d-flex flex-column justify-content-center ask-us-form">
                 <input type="text" placeholder="Name"
@@ -227,7 +254,7 @@
                 <div class="d-flex flex-column flex-md-row mt-5 justify-content-between">
                     <button
                         class="border-1 border-black bg-white py-1 px-5 fw-semibold rounded-5 button-style">Send</button>
-                    <div class="d-flex justify-content-center  align-items-center gap-4 mt-2 me-md-5">
+                    <div class="d-flex justify-content-center  align-items-center gap-4 mt-2 me-lg-5 mt-3 mt-md-0">
                         <a href="#" class="heading-color plant-social-icons"><i
                                 class="fa-brands fa-facebook-f fs-5"></i></a>
                         <a href="#" class="heading-color plant-social-icons"><i
@@ -274,33 +301,36 @@
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 gap-4">
             <div class="me-5">
                 <button class="border rounded-5 p-3 bg-white" id="client-back-button">
-                    <img src="./images/client-section/play-solid.svg" alt="play button" height="30px" width="30px">
+                    <img src="./images/client-section/play-solid.svg" alt="play button" height="25px" width="25px">
                 </button>
             </div>
-            <div class="client-slider d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
+            <div
+                class="client-slider d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
                 <img src="images/client-section/women-1.png" alt="women image" height="100px" width="100px"
-                        class="client-img">
+                    class="client-img">
                 <span><i class="fa-solid fa-quote-left"></i><span>
-                <p class="ms-4 pe-lg-5 text-description-color">
-                    It is a long established fact that a readerwill be distracted by<br> the
-                    readable content of a page when It is a long .It is a long .It<br> is a long established fact that a reader will be . It
-                    is a long<br> established fact that a reader .
-                </p>
-                <span class="float-end me-5"><i class="fa-solid fa-quote-right"></i></span>
+                        <p class="ms-4 pe-lg-5 text-description-color">
+                            It is a long established fact that a readerwill be distracted by<br> the
+                            readable content of a page when It is a long .It is a long .It<br> is a long established
+                            fact that a reader will be . It
+                            is a long<br> established fact that a reader .
+                        </p>
+                        <span class="float-end me-5"><i class="fa-solid fa-quote-right"></i></span>
             </div>
-            <div class="client-slider d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
+            <div
+                class="client-slider d-flex flex-column flex-lg-row justify-content-center align-items-center client-review-card py-4 rounded-4 px-3 px-lg-0">
                 <img src="images/client-section/jhonedoe.png" alt="women image" height="100px" width="100px"
                     class="client-img">
                 <span><i class="fa-solid fa-quote-left"></i><span>
-                 <p class="ms-4 pe-lg-5 text-description-color">It is a long established fact that a reader will
+                        <p class="ms-4 pe-lg-5 text-description-color">It is a long established fact that a reader will
                             be distracted by<br> the readable content of a page when
                             It is a long .It is a long .It<br> is a long established fact that a reader will be . It is
                             a long<br> established fact that a reader .</p>
-                <span class="float-end me-5"><i class="fa-solid fa-quote-right pe-3"></i></span>
+                        <span class="float-end me-5"><i class="fa-solid fa-quote-right pe-3"></i></span>
             </div>
             <div>
                 <button class="border rounded-5 p-3 bg-white" id="client-forward-button">
-                    <img src="./images/client-section/play-solid.svg" alt="play button" height="30px" width="30px">
+                    <img src="./images/client-section/play-solid.svg" alt="play button" height="25px" width="25px">
                 </button>
             </div>
         </div>
@@ -311,22 +341,22 @@
     <section
         class="container-fluid plant-section my-5 pt-md-5 d-flex flex-column flex-lg-row justify-content-between gap-3">
         <div class="p-2 ms-lg-5 plant-description">
-            <h2>Plant care</h2>
+            <h2 class="text-center text-lg-start">Plant care</h2>
             <p class="mt-5 text-description-color plant-content">It is a long established fact that a reader will be
                 distracted by the
                 readable content of a page when It
                 is a long.It is a long established fact that a reader will be distracted by the readable content
                 of a
-                is simply.a page when It is a long .It is a long established fact that a reader will be
+                is simply.<br>a page when It is a long .It is a long established fact that a reader will be
                 distracted by
                 the readable content of a is simply.
             </p>
             <button
-                class="border-1 border-black bg-white rounded-5 py-2 px-4 fw-semibold mt-3 mt-md-5 button-style">Read
+                class="border-1 border-black bg-white rounded-5 py-2 px-5 fw-semibold mt-3 mt-md-5 button-style">Read
                 the blog</button>
         </div>
-        <div class="jungle-img"><img src="images/plant-section/jungle.png" alt="jungle section" class="img-fluid w-100"
-                height="200px"></div>
+        <div class="jungle-img">
+            <img src="images/plant-section/jungle.png" alt="jungle section" class="img-fluid h-100 w-100"></div>
     </section>
 
     <!-- footer Section -->

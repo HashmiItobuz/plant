@@ -41,7 +41,23 @@ body {
     border: 1px solid black;
 }
 
+.hero-back-button {
+    transform: rotate(180deg);
+}
+
+.hero-social-icons:hover {
+    transform: scale(1.5);
+}
+
+.hero-line {
+    color: #3E8847;
+}
+
 /* Plant Collection Section */
+
+.our-journey-section {
+    position: relative;
+}
 
 .journey-detail-section {
     padding-top: 10rem;
@@ -51,21 +67,19 @@ body {
     width: 100%;
 }
 
-.our-journey-section {
-    position: relative;
-}
-
 .journey-plant-img {
     position: absolute;
     left: 1.5rem;
     top: 50px;
 }
 
-.collection-back-slider-button,.back-icon {
+.collection-back-slider-button,
+.back-icon {
     border-color: #09270D !important;
 }
 
-.collection-forward-slider-button, .forward-icon {
+.collection-forward-slider-button,
+.forward-icon {
     border-color: #F5C771 !important;
 }
 
@@ -154,6 +168,10 @@ body {
     font-family: Playfair;
 }
 
+.plant-social-icons:hover {
+    transform: scale(1.5);
+}
+
 /* Footer section */
 
 footer {
@@ -167,10 +185,6 @@ footer {
 }
 
 /* common section */
-
-.plant-social-icons:hover {
-    transform: scale(1.5);
-}
 
 .heading-color {
     color: #3E8847 !important;
@@ -206,10 +220,6 @@ h2,
     text-decoration: 2px underline !important;
 }
 
-.hero-social-icons:hover {
-    transform: scale(1.5);
-}
-
 .social-icon:hover {
     transform: scale(1.5);
 }
@@ -225,7 +235,7 @@ h2,
     }
 
     .hero-left {
-        width: 38%;
+        width: 40%;
         position: relative;
         top: 20%;
         z-index: 2;
@@ -240,6 +250,7 @@ h2,
     .hero-plant-image {
         width: 70%;
         height: 70%;
+        overflow-x: hidden;
         z-index: 1;
         position: absolute;
         top: 15%;
@@ -248,17 +259,10 @@ h2,
     .hero-leafs-image {
         width: 40%;
         height: 100%;
+        overflow-x: hidden;
         z-index: -1;
         position: absolute;
         left: 60%;
-    }
-
-    .plant-collection {
-        margin-top: 0rem !important;
-    }
-
-    .green-background {
-        width: 45%;
     }
 
     .garden-backround {
@@ -279,6 +283,10 @@ h2,
 
     .ask-us-form {
         width: 90%;
+    }
+
+    .green-background {
+        width: 45%;
     }
 
     .journey-plant-img {
@@ -322,13 +330,14 @@ h2,
     }
 
     .hero-right {
-        width: 60%;
+        width: 70%;
         position: relative;
     }
 
     .hero-plant-image {
         width: 90%;
         height: 80%;
+        overflow-x: hidden;
         z-index: 1;
         position: absolute;
         top: 8%;
@@ -336,17 +345,13 @@ h2,
 
     .hero-leafs-image {
         width: 29%;
-        height: 74vh;
+        overflow-x: hidden;
         z-index: -1;
-        left: 85%;
+        left: 71%;
     }
 
     .green-background {
         width: 40%;
-    }
-
-    .plant-collection {
-        margin-top: 0rem !important;
     }
 
     .garden-backround {
@@ -403,7 +408,7 @@ h2,
         position: relative;
         top: 30%;
         z-index: 2;
-        left: 5%;
+        left: 6%;
     }
 
     .hero-right {
@@ -414,6 +419,7 @@ h2,
     .hero-plant-image {
         width: 70%;
         height: 80%;
+        overflow-x: hidden;
         z-index: 1;
         position: absolute;
         top: 10%;
@@ -422,6 +428,7 @@ h2,
     .hero-leafs-image {
         width: 40%;
         height: 100%;
+        overflow-x: hidden;
         z-index: -1;
         position: absolute;
         left: 60%;
@@ -429,14 +436,6 @@ h2,
 
     .green-background {
         width: 30%;
-    }
-
-    .plant-collection {
-        margin-top: 0rem !important;
-    }
-
-    .plant-content {
-        font-size: 1.5rem;
     }
 
     .journey-plant-img {
@@ -462,12 +461,16 @@ h2,
         width: 90%;
     }
 
-    .jungle-img {
-        width: 60%;
+    .plant-content {
+        font-size: 1.5rem;
     }
 
     .plant-description {
         width: 37%;
+    }
+
+    .jungle-img {
+        width: 60%;
     }
 
     .garden-backround {

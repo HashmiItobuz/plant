@@ -1,3 +1,7 @@
+const heroBackButton = document.querySelector(".hero-back-button");
+const heroForwardButton = document.querySelector(".hero-forward-button");
+const heroSliderContainer = document.querySelectorAll(".hero-slider-img");
+const heroSliderLine = document.querySelectorAll(".hero-slider-line");
 const collectionBackButton = document.getElementById("collection-back-button");
 const collectionForwardButton = document.getElementById("collection-forward-button");
 const sliderCards = document.querySelectorAll(".collection-slider");
@@ -5,65 +9,95 @@ const clientBackButton = document.getElementById("client-back-button");
 const clientForwardButton = document.getElementById("client-forward-button");
 const clientSliderCards = document.querySelectorAll(".client-slider");
 
-
 let flag = 0;
 
-sliderDisplay(flag);
-clientDisplay(flag);
+heroBackButton.addEventListener('click', () => {
+    const num = 1;
+    flag = flag + num;
+    heroSlider(flag);
+});
+
+heroForwardButton.addEventListener('click', () => {
+    const num = 1;
+    flag = flag - num;
+    heroSlider(flag);
+})
+
+function heroSlider(index) {
+    for (let item of heroSliderContainer) {
+        item.classList.add("hidden");
+    }
+    if (index >= heroSliderContainer.length) {
+        flag = 0;
+        index = 0;
+    } else if (index < 0) {
+        flag = heroSliderContainer.length - 1;
+        index = heroSliderContainer.length - 1;
+    }
+
+    heroSliderContainer[index].classList.remove("hidden");
+    heroSliderLine[index].classList.toggle("hero-line");
+}
+
+heroSlider(flag);
 
 collectionBackButton.addEventListener("click", () => {
-    let n1 = 1;
-    flag = flag - n1;
+    const num = 1;
+    flag = flag - num;
     sliderDisplay(flag);
 });
 
 collectionForwardButton.addEventListener("click", () => {
-    let n1 = 1;
-    flag = flag + n1;
+    let num = 1;
+    flag = flag + num;
     sliderDisplay(flag);
 });
 
-function sliderDisplay(num) {
-    for(let items of sliderCards) {
+function sliderDisplay(index) {
+    for (let items of sliderCards) {
         items.classList.add("hidden");
     }
 
-    if(num >= sliderCards.length) {
+    if (index >= sliderCards.length) {
         flag = 0;
-        num = 0;
+        index = 0;
 
-    }else if(num < 0) {
+    } else if (index < 0) {
         flag = sliderCards.length - 1;
-        num = sliderCards.length - 1;
+        index = sliderCards.length - 1;
     }
-    sliderCards[num].classList.remove("hidden");
+    sliderCards[index].classList.remove("hidden");
 }
 
+sliderDisplay(flag);
 
 clientBackButton.addEventListener('click', () => {
-    let n1 = 1;
-    flag = flag - n1;
+    const num = 1;
+    flag = flag - num;
     clientDisplay(flag);
 });
 
 clientForwardButton.addEventListener('click', () => {
-    let n1 = 1;
-    flag = flag + n1;
+    let num = 1;
+    flag = flag + num;
     clientDisplay(flag);
 });
 
-function clientDisplay(num1) {
-    for(let items of clientSliderCards) {
+function clientDisplay(index) {
+    for (let items of clientSliderCards) {
         items.classList.add("hidden");
     }
 
-    if(num1 >= clientSliderCards.length) {
+    if (index >= clientSliderCards.length) {
         flag = 0;
-        num1 = 0;
+        index = 0;
 
-    }else if(num1 < 0) {
+    } else if (index < 0) {
         flag = clientSliderCards.length - 1;
-        num1 = clientSliderCards.length - 1;
+        index = clientSliderCards.length - 1;
     }
-    clientSliderCards[num1].classList.remove("hidden");
+    clientSliderCards[index].classList.remove("hidden");
 }
+
+clientDisplay(flag);
+
