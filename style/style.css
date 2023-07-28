@@ -1,3 +1,9 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
 body {
     margin: 0;
     padding: 0;
@@ -132,6 +138,8 @@ body {
 
 .choosing-cards:hover {
     background-color: #3E8847;
+    transform: scale(1.2);
+    transition: all 0.7s ease-in-out;
 }
 
 .choosing-cards:hover p {
@@ -232,6 +240,26 @@ h2,
     transform: scale(1.1);
 }
 
+.animation {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.hero-slider-line {
+    width:100px !important;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0.1;
+        translate: 20px;
+    }
+    to {
+        opacity: 1;
+        traslate:-20px;
+    }
+    
+}
 
 @media screen and (min-width:768px) {
 
@@ -318,6 +346,7 @@ h2,
     .jungle-img {
         width: 100%;
     }
+    
 }
 
 @media screen and (min-width:1024px) {
@@ -480,7 +509,7 @@ h2,
 
     .garden-backround {
         width: 60%;
-        height: 550px;
+        height: 60vh;
         z-index: -1;
         position: relative;
     }

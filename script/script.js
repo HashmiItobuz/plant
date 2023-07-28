@@ -56,8 +56,7 @@ function sliderDisplay(index) {
     }
     sliderCards[index].classList.remove("hidden");
 }
-
-sliderDisplay(flag);
+setTimeout(sliderDisplay(flag), 3000);
 
 collectionBackButton.addEventListener("click", () => {
     const num = 1;
